@@ -92,6 +92,7 @@ class unavailable_time:
             .distinct()
             .all()
         )
+        # 创建不可用列表
         unavailable_times_by_date_list=[time[0] for time in unavailable_times_by_date]
         print(unavailable_times_by_date_list,"unavailable_times_by_date_list")
         final_unavailable_times = []
